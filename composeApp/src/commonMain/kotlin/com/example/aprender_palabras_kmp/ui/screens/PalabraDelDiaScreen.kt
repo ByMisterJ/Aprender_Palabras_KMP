@@ -1,5 +1,6 @@
 package com.example.aprender_palabras_kmp.ui.screens
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -89,9 +90,7 @@ fun PalabraDelDiaScreen(
                     containerColor = AppColors.White,
                     contentColor = AppColors.DarkBlue
                 ),
-                border = ButtonDefaults.outlinedButtonBorder.copy(
-                    width = 2.dp
-                )
+                border = BorderStroke(width = 2.dp, color = AppColors.DarkBlue)
             ) {
                 Text(
                     text = "Volver a la palabra del día",
