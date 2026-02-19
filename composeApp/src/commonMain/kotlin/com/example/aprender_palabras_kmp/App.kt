@@ -1,13 +1,14 @@
 package com.example.aprender_palabras_kmp
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Menu
+//import androidx.compose.material.icons.Icons
+//import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.aprender_palabras_kmp.data.PalabrasRepository
 import com.example.aprender_palabras_kmp.ui.components.DrawerContent
@@ -61,10 +62,11 @@ fun App() {
                                     drawerState.open()
                                 }
                             }) {
-                                Icon(
-                                    imageVector = Icons.Default.Menu,
-                                    contentDescription = "Menú"
-                                )
+                                Text("Menú")
+//                                Icon(
+//                                    imageVector = Icons.Default.Menu,
+//                                    contentDescription = "Menú"
+//                                )
                             }
                         },
                         colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
